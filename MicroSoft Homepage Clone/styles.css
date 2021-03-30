@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+	background-color: white;
+	color: black;
+	font-size: 15px;
+	line-height: 1.5;
+	width: 100%;
+	text-align: justify;
+}
+
+a{
+   list-style: none;
+   list-style-type: none;
+   text-decoration: none;
+   color: black;
+}
+
+i{
+	margin-left:5px;	
+	margin-right:5px; 
+}
+
+a:hover{
+	border-bottom: black 2px solid;
+}
+
+li{
+   display: inline-block;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+button{
+	width: 120px;
+	height: 40px;
+    background-color: #262626;
+    color: white;
+    font-size: medium;
+    border:none;
+    margin-top: 20px;
+}
+
+.back-blue{
+	color: blue;
+}
+
+.back-sky{
+	color: skyblue;
+}
+
+.back-pink{
+	color:pink;
+}
+
+
+.page{
+	width: 80%;
+	margin: auto;
+}
+
+.navigation{
+	height: 60px;
+	display: flex;
+	align-items: center;
+
+	font-size: small;
+}
+
+.navigation a:hover{
+	border-bottom: none;
+}
+
+.nav-1{
+	width: 50%;
+	align-self: center;
+	display: flex;
+	justify-content: start;
+	margin-left: 30px;
+}
+
+.nav-2{
+	width: 50%;
+	align-self: center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navigation img{
+	height: 30px;
+}
+
+
+.opening{
+	background:url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
+	
+	height: 400px;
+	margin: auto;
+}
+
+.o-1{
+	height: 400px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+
+	padding: 100px;
+}
+
+.o-1 a:hover{
+   list-style: none;
+   list-style-type: none;
+   text-decoration: none;
+   color: white;
+   border:none;
+}
+
+.product{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 30px;
+	margin: auto;
+	margin-top: 10px;
+	word-spacing: -1px;
+}
+
+.product > div{
+	height: 300px;
+}
+
+.product img{
+	width: 100%;
+}
+
+.p-1 h3{
+	margin-top: 30px;
+}
+
+.p-1 h4{
+	margin-top: 10px;
+}
+
+.product a{
+ color: blue;
+}
+
+.xbx{
+	height: 350px;
+	width: 100%;
+	background:url('https://i.ibb.co/tBJGPD9/xbox.png') no-repeat center center/cover;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.services{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 30px;
+	height: 300px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.services h4{
+	color: blue;
+	margin-top: 20px;
+}
+
+
+.services h2{
+	margin-top: 20px;
+}
+.services img{
+	width: 100%;
+}
+
+.learn{
+	background:url('https://i.ibb.co/72cgtsz/carbon.jpg') no-repeat center center/cover;
+	width: 80%;
+	height: 350px;
+	margin: auto;
+    margin-top: 60px;
+	display: grid;
+	grid-auto-columns: 1fr 4fr;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	color: white;
+}
+
+.l-1{
+	width: 50%;
+	margin-left:10px;
+}
+
+.learn button{
+	background-color: white;
+	color: black;
+}
+
+.social{
+ width: 80%;
+
+ display: flex;
+ align-items: center;
+ margin: auto;
+ margin-top: 20px;
+}
+
+.social i{
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.social p{
+	margin-right: 10px;
+}
+
+.footer-1{
+	
+ width: 100%;
+ margin-top: 20px;
+ background-color: #f2f2f2;
+ }
+
+ .foot{
+ width: 80%;
+ margin: auto;
+ height: 270px; 
+ display:grid;
+ grid-template-columns: repeat(6,1fr);
+ text-align: center;
+ }
+
+.f-1{
+	margin-top: 20px;
+}
+
+.f-1 li{
+	margin-top: 15px;
+	display: block;
+}
+
+.lang{
+	color: grey;
+}
+
+.footer-2{
+ background-color: #f2f2f2;
+ width: 100%;
+}
+
+.foot-2{
+ width: 80%;
+ margin: auto;
+ padding: 20px;
+ display: flex;
+ grid-template-columns:1fr 1fr; 
+ word-wrap: no-wrap;
+}
+
+.footer-1,.footer-2{
+	font-size: small;
+}
+
+/*Reactive Classes*/
+
+@media(max-width: 700px){
+  .opening {
+  	text-align: center;
+  	margin-top: 50px;
+  }
+
+  .product{
+  	grid-template-columns: 1fr;
+  	text-align: center;
+  }
+
+  .product > div{
+  	margin-top: 50px;
+  }
+
+  .xbx{
+  	margin-top: 60px;
+  }
+
+  .xbx p{
+  	display: none;
+  }
+   
+  .services{
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .learn{
+  	margin-top: 1200px;
+  }
+
+  .learn p{
+  	display: none;
+  }
+
+  .footer-1{
+  }
+
+  .foot{
+  	grid-template-columns: 1fr;
+
+  	height: 0%; /*Dont know how it resolves the the 
+  	backgound color or content problem*/
+  }
+
+  .foot-2{
+  	grid-template-columns: 1fr;
+  }
+
+}
+
